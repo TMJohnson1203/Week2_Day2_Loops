@@ -131,25 +131,58 @@ namespace Week2_Day2_Loops
             //    Console.ReadLine();
             //    Console.WriteLine("What was the time of your appointment?");
             //    Console.ReadLine();
+            ////}
+
+            //string playAgain;
+            //do
+            //{
+            //    Console.WriteLine("Great game!");
+            //    Console.WriteLine("Do you want to play again? (YES/NO)");
+            //    playAgain = Console.ReadLine().ToUpper();
             //}
+            //while (playAgain == "YES");
+            //Console.WriteLine("Thank you for playing!");
 
-            string playAgain;
-            do
+            //string addGpa;
+            //do
+            //{
+            //    Console.WriteLine("Please enter the letter grade for your class.");
+            //    addGpa = Console.ReadLine().ToUpper();
+            //    Console.WriteLine("Please enter the letter grade for another class.");
+            //    addGpa = Console.ReadLine().ToUpper();
+            //}
+            //while(addGpa == "YES");
+
+            for(int i = 0; i <= 20; i++)
             {
-                Console.WriteLine("Great game!");
-                Console.WriteLine("Do you want to play again? (YES/NO)");
-                playAgain = Console.ReadLine().ToUpper();
+                if(i % 2 == 0)
+                {
+                    continue;
+                }
+                Console.WriteLine(i);
             }
-            while (playAgain == "YES");
-            Console.WriteLine("Thank you for playing!");
 
+            Console.WriteLine("The loop has finished.");
 
-
-
-
-
+            for (int i = 1; i <=2; i++)
             {
+                for (int j = 1; j <= 4; j++)
+                {
+                    Console.Write(j); 
+                }
+                Console.WriteLine();
+            }
 
+            Console.WriteLine("Please enter an integer between 1 and 100.");
+
+            int n = int.Parse(Console.ReadLine());
+            for (int row = 1; row <= n; row++)
+            {
+                for (int col = 1; col <= row; col++)
+                {
+                    Console.Write(col + " ");
+                }
+                Console.WriteLine();
             }
 
 
